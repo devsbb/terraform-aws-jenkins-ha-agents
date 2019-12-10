@@ -167,3 +167,12 @@ variable "key_name" {
   description = "Key name to launch the instances"
 }
 
+variable "scale_up_number" {
+  default = 1
+  description = "Number of machines to create when scaling up"
+}
+
+variable "scale_down_number" {
+  default = -1
+  description = "Number of machines to destroy when scaling down"
+}
